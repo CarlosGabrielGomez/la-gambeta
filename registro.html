@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>La Gambeta</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/style.css" rel="stylesheet" />
+    <!--aca linkeamos la fuente Monserrat de google font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!--acá ponemos el enlace del favicon con el diseño del sitio web-->
+    <link
+      href="https://img.icons8.com/ios/50/000000/football.png"
+      rel="icon"
+      type="image/png"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html">
+          <img
+            src="https://img.icons8.com/pastel-glyph/64/000000/football2.png"
+            sizes="10x10"
+          />
+        </a>
+      </div>
+
+      <nav id="nav">
+        <ul class="navegador" id="navegador">
+          <li class="submenu"><a href="registro.html ">Inscribirme</a></li>
+          <li class="submenu"><a href="terminos.html ">Terminos</a></li>
+        </ul>
+      </nav>
+      <button id="boton" onclick="ocultar()">
+        <img src="https://img.icons8.com/ios/50/000000/tab.png" />
+      </button>
+    </header>
+
+    <main class="cuerpo">
+      <div class="marco-redondo caja-inscripcion">
+        <form action="#" method="POST">
+          <h1>Complete el siguiente formulario</h1>
+          <!--datos personales-->
+          <label>
+            Nombre
+            <input type="text" placeholder="Ingrese su nombre " required />
+          </label>
+
+          <label>
+            Apellido
+            <input type="text" placeholder="Ingrese su apellido " required />
+          </label>
+
+          <label>
+            Celular
+            <input type="number" placeholder="ingrese su celular" required />
+          </label>
+
+          <!--datos de registro -->
+
+          <label>
+            E-mail:
+            <input type="email" required placeholder="ejemplo@gmail" />
+          </label>
+          <br />
+
+          <label>
+            Número:
+            <input type="number" min="18" max="300" />
+          </label>
+          <br />
+
+          <label>
+            Fecha:
+            <input type="date" />
+          </label>
+          <br />
+
+          <h4>Seleccione su sexo</h4>
+
+          <label> <input type="radio" name="comida" /> Masculino </label>
+          <label> <input type="radio" name="comida" /> Femenino </label>
+          <br />
+
+          <label>
+            <input type="checkbox" required /> Acepto terminos y
+            condiciones
+          </label>
+          <br />
+
+          <input type="submit" value="Enviar " />
+        </form>
+      </div>
+    </main>
+
+    <footer>
+      <section>
+        <p>Contacto</p>
+
+        <ul>
+          <li class="medio-contacto">
+            <a href="# "
+              ><img
+                src="https://img.icons8.com/ios-filled/50/000000/send-mass-email.png"
+              />algo@hotmial.com</a
+            >
+          </li>
+          <li class="medio-contacto">
+            <a href="# "
+              ><img
+                src="https://img.icons8.com/ios-filled/50/000000/phone.png"
+              />1212121212</a
+            >
+          </li>
+
+          <li class="medio-contacto">
+            <a href=" "
+              ><img
+                src="https://img.icons8.com/material/50/000000/admin-settings-male.png"
+              />Backoffice</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <p>Redes sociales</p>
+        <ul>
+          <li>
+            <a href="# " target="blank "
+              ><img
+                src="https://img.icons8.com/material/50/000000/facebook-circled.png"
+              />
+              Facebook
+            </a>
+          </li>
+
+          <li>
+            <a href="# " target="blank "
+              ><img
+                src="https://img.icons8.com/material/50/000000/twitter--v1.png"
+              />Twitter</a
+            >
+          </li>
+
+          <li>
+            <a href="# " target="blank "
+              ><img
+                src="https://img.icons8.com/material/50/000000/instagram-new--v1.png"
+              />Instagram</a
+            >
+          </li>
+
+          <li>
+            <a href="# " target="blank "
+              ><img
+                src="https://img.icons8.com/ios/50/000000/youtube-squared.png"
+              />Youtube</a
+            >
+          </li>
+        </ul>
+      </section>
+    </footer>
+    <script src="../sitio_armado/js/script.js"></script>
+  </body>
+</html>
